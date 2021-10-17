@@ -1,0 +1,14 @@
+server:
+  port: 9191
+
+spring:
+  cloud:
+    function:
+      definition: publishBookEvent
+      scan:
+        functions: com.app.publisher.eventPublisher
+    stream:
+      bindings:
+        publishBookEvent-out-0:
+          destination: stream-cloud-test
+          binder: kafka
