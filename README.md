@@ -45,3 +45,7 @@
                             binder: kafka
 
     4. now we can perform our buisness logic and ganerate event as needed.
+    5. Start the zookeeper server then kafka server 
+    
+    
+    
